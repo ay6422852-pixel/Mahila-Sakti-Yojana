@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://https://silly-axolotl-679d7b.netlify.app/api",
+  baseURL: "https://mahila-shakti-yojana.vercel.app//api",
   timeout: 10000,
 });
 
