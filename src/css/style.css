@@ -1,0 +1,58 @@
+/* basic reset */
+* { box-sizing: border-box; }
+body { font-family: Inter, Arial, sans-serif; margin:0; background:#f4f6f8; color:#222; }
+
+/* NAV */
+.nav {
+  display:flex; justify-content:space-between; align-items:center;
+  background: linear-gradient(90deg,#ff7a7a,#ff5a9e);
+  padding:12px 20px; color:#fff;
+}
+.brand { font-weight:700; color:#fff; text-decoration:none; }
+.nav-right { display:flex; gap:10px; align-items:center; }
+.nav-link { color:#fff; text-decoration:none; padding:6px 10px; border-radius:6px; }
+.btn-logout { background:#fff; color:#ff4c4c; border:none; padding:6px 10px; border-radius:6px; cursor:pointer; }
+.nav-role { background: rgba(255,255,255,0.18); padding:6px 8px; border-radius:6px; font-weight:600; }
+
+/* center card */
+.center-page { display:flex; align-items:flex-start; justify-content:center; padding:28px; min-height: calc(100vh - 60px); }
+.card { background:#fff; border-radius:12px; box-shadow:0 8px 30px rgba(12,20,30,0.06); padding:20px; width:100%; max-width:480px; }
+.card.large { max-width:720px; }
+.card.xlarge { max-width:1100px; }
+.card-title { font-size:20px; color:#333; margin:0 0 12px 0; text-align:left; }
+
+/* form */
+.form { display:flex; flex-direction:column; gap:10px; }
+.form label { font-weight:600; color:#333; }
+.form input, .form select {
+  padding:10px 12px; border-radius:8px; border:1px solid #e0e6ea; font-size:14px;
+}
+.btn { background: linear-gradient(90deg,#ff6b6b,#ff4c8a); color:#fff; border:none; padding:10px; border-radius:8px; font-weight:600; cursor:pointer; margin-top:8px; }
+.btn:disabled { opacity:0.6; cursor:not-allowed; }
+
+.muted { color:#666; margin-top:8px; font-size:13px; }
+a { color:#ff4c4c; text-decoration:none; }
+
+/* password inside input */
+.password-wrapper { position:relative; }
+.password-wrapper input { padding-right:38px; }
+.toggle-password {
+  position:absolute; right:8px; top:50%; transform:translateY(-50%); background:transparent; border:none; cursor:pointer; font-size:16px;
+}
+
+/* table */
+.table-wrap { overflow:auto; max-height:60vh; }
+.table { width:100%; border-collapse:collapse; }
+.table th, .table td { padding:8px 10px; border:1px solid #eef2f5; text-align:left; font-size:14px; }
+.table thead th { background:#f7fafc; }
+
+/* small buttons & utilities */
+.small-btn { background:#eef2ff; border:1px solid #d0e2ff; color:#1160d4; padding:6px 10px; border-radius:8px; margin-right:8px; cursor:pointer; }
+.grid { display:grid; grid-template-columns: repeat(2, 1fr); gap:12px; margin-top:8px; }
+.list { margin:8px 0 0 18px; }
+
+/* responsive */
+@media (max-width:720px) {
+  .card { padding:16px; max-width:95%; }
+  .grid { grid-template-columns: 1fr; }
+}
