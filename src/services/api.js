@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://mahila-shakti-yojana.vercel.app//api",
+  baseURL: "https://mahila-shakti-yojana.vercel.app/api",
   timeout: 10000,
 });
 
