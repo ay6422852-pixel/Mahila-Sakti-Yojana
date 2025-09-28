@@ -31,6 +31,8 @@ export default function AdminDashboard() {
     });
     setUsers(sorted);
   };
+  console.log(sortField);
+
 
   return (
     <div className="center-page">
