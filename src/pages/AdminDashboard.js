@@ -6,6 +6,7 @@ export default function AdminDashboard() {
   const [users, setUsers] = useState([]);
   const [sortField, setSortField] = useState("");
   const navigate = useNavigate();
+  console.log(sortField)
 
   useEffect(() => {
     const fetch = async () => {
@@ -31,7 +32,7 @@ export default function AdminDashboard() {
     });
     setUsers(sorted);
   };
-  console.log(sortField);
+
 
 
   return (
